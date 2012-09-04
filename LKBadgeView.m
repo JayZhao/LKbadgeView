@@ -71,7 +71,7 @@
 - (void)_setupDefaultWithoutOutline
 {
     self.textColor = [UIColor whiteColor];
-    self.badgeColor = [UIColor grayColor];
+    self.badgeColor = [UIColor lightGrayColor];
 
     outline_ = NO;
     outlineWidth_ = 2.0;
@@ -143,8 +143,8 @@
         }
     }
     if (self.widthMode == LKBadgeViewWidthModeStandard) {
-        if (badgeFrame_.size.width < LK_BADGE_VIEw_STANDARD_WIDTH) {
-            badgeFrame_.size.width = LK_BADGE_VIEw_STANDARD_WIDTH;
+        if (badgeFrame_.size.width < LK_BADGE_VIEW_STANDARD_WIDTH) {
+            badgeFrame_.size.width = LK_BADGE_VIEW_STANDARD_WIDTH;
         }
     }
 }
