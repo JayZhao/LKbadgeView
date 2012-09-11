@@ -71,7 +71,7 @@
 - (void)_setupDefaultWithoutOutline
 {
     self.textColor = [UIColor whiteColor];
-    self.badgeColor = [UIColor lightGrayColor];
+    self.badgeColor = [UIColor colorWithWhite:0.8 alpha:1];
 
     outline_ = NO;
     outlineWidth_ = 2.0;
