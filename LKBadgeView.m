@@ -70,8 +70,8 @@
 
 - (void)_setupDefaultWithoutOutline
 {
-    self.textColor = [UIColor whiteColor];
-    self.badgeColor = [UIColor colorWithWhite:0.75 alpha:1];
+    self.textColor = [PhiSetting sharedSetting].unreadCountTextColor;
+    self.badgeColor = [PhiSetting sharedSetting].unfoldAndUnreadCountBackgroundColor;
 
     outline_ = NO;
     outlineWidth_ = 2.0;
@@ -82,8 +82,8 @@
 
 - (void)_setupDefaultWithOutline
 {
-    self.textColor = [UIColor grayColor];
-    self.badgeColor = [UIColor whiteColor];
+    self.textColor = [PhiSetting sharedSetting].unreadCountTextColor;
+    self.badgeColor = [PhiSetting sharedSetting].unfoldAndUnreadCountBackgroundColor;
 
     outline_ = YES;
     outlineWidth_ = 3.0;
